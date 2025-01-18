@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">lorem ipsum</p>
+    <form id="survey-form">
+
+      <label for="name" id="name-label">Name :</label>
+      <input  required type="text" name="text" id="name" placeholder="Your Name">
+      <br>
+
+      <label for="email" id="email-label">Email :</label>
+      <input required id="email" type="email" name="email" placeholder="Ex Mail@gmail.com">
+      <br>
+
+      <label for="number" id="number-label">Age(optional) :</label>
+      <input id="number" type="number" min="3" max="100" placeholder="Age">
+      <br>
+      <label for="dropdown">Choose a Number</label>
+      <select id="dropdown">
+        <option>745</option>
+        <option>554</option>
+      </select>
+
+      <p>Choose one :</p>
+      <label for="option1">Option 1</label>
+      <input type="radio" name="radio" value="option 1" id="option1">
+      <label for="option2">Option 2</label>
+      <input type="radio" name="radio" value="option 2" id="option2">
+
+      <p>Check one :</p>
+      <label for="box1">Box 1</label>
+      <input id="box1" value="box1" type="checkbox">
+      <label for="box2">Box2</label>
+      <input type="checkbox" value="box2" id="box2">
+      <p>Kteb :</p>
+      <label>
+        for additional information
+        <textarea rows="4" cols="20"></textarea>
+      </label>
+      <br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+
+</html>

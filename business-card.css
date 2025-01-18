@@ -1,0 +1,87 @@
+body{
+  background-color:rosybrown;
+  font-family:Arial, sans-serif;
+  color:#C0C0C0;
+}
+
+.business-card{
+  width:300px;
+  font-size: 16px;
+  text-align: center;
+  padding : 20px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px black;
+  background: linear-gradient(to bottom, #000000, #000000, #333333, #4d4d4d, #666666);
+
+
+
+}
+
+p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+img{
+  display : inline-block;
+  width: 40%;
+  height : 40%;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.full-name{
+  font-size: big;
+  text-decoration: bold;
+  font-family: Futura , monospace;
+}
+
+.designation{
+  font-size: medium;
+  font-family: monospace;
+}
+
+a:active{
+  color: white;
+}
+a:visited{
+  color:black;
+}
+a:link{
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+.email-tel{
+  font-size: medium;
+  font-family: monospace;
+}
+
+.company{
+    font-size: medium;
+    font-family: monospace;
+}
+
+.social-media{
+  color: #C0C0C0;
+  font-size: medium;
+  font-family: monospace;
+}
+
+h2 {
+  color: #C0C0C0;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+hr{
+  margin-top: 1px;
+  border-top: 1px dashed slategray;
+}
