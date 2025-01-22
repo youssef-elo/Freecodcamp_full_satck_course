@@ -1,0 +1,93 @@
+.hea{
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.triz{
+	height: 70px;
+}
+
+.flyer{
+	width: 700px;
+	height: 950px; 
+	background-color: grey;
+	display: inline-block;
+	word-break: break-word;
+	font-family: oswald;
+	padding-left : 30px;
+	padding-right : 30px;
+	color: white;
+	background-image : url("https://img.freepik.com/free-photo/blank-black-wavy-paper-background_53876-105990.jpg?ga=GA1.1.1953769636.1734268147&semt=ais_hybrid");
+	background-repeat: no-repeat;
+	background-size:cover;
+	/* margin-left: 20%; */
+}
+
+.date{
+	display: inline-block;
+	border-right: 1px solid white; 
+	border-left: 1px solid white; 
+	/* margin-left: 10px; */
+}
+.events{
+	margin-left: 20px;;
+}
+
+/* .events{
+	padding-left: 10px;;
+} */
+.description{
+	display: inline-block;
+	height: 100%;
+	margin-left: 40px
+	/* text-align: center; */
+	/* margin-top : 0px; */
+	/* margin: 0px; */
+}
+.event-title{
+	margin-top: 0px;
+}
+
+hr{
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+
+.lore{
+	font-family: abel;
+	font-size : 11;
+	letter-spacing: 2;
+	/* margin : 0px; */
+}
+
+.hea{
+	font-size : 55px;
+	color: white;
+}
+
+.day{
+	font-size: 40px;
+	letter-spacing: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	text-align : center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.month{
+	font-size: 24px;
+	letter-spacing: 3px;
+	line-height: 1em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align : center;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+
+.foot{
+	font-family: abel;
+	font-size: 30px;
+	text-align: center;
+}
