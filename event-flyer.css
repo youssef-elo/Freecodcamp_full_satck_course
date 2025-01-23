@@ -1,6 +1,6 @@
 .hea{
 	display: inline-block;
-	margin-bottom: 30px;
+	/* padding-bottom: 30px; */
 }
 
 .triz{
@@ -20,7 +20,7 @@
 	background-image : url("https://img.freepik.com/free-photo/blank-black-wavy-paper-background_53876-105990.jpg?ga=GA1.1.1953769636.1734268147&semt=ais_hybrid");
 	background-repeat: no-repeat;
 	background-size:cover;
-	/* margin-left: 20%; */
+	margin-left: 35%;
 }
 
 .date{

@@ -1,0 +1,109 @@
+.container{
+    width: 600px;
+    height: 700px;
+    display: block;
+    margin-left: 25px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 30px;
+    /* padding-right: 20px; */
+    /* background-color: beige; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* line-height: 20px; */
+    margin-bottom: 30px;
+}
+select{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0px;
+}
+
+fieldset{
+    margin-top: 15px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline-color: black;
+}
+
+input:invalid, textarea:invalid, select:invalid{
+    outline-color: red;
+}
+
+input:valid, textarea:valid, select:valid{
+    outline-color: green;
+}
+
+label{
+    display: block;
+}
+
+input{
+    display: block;
+    width: 94%;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background-color: midnightblue;
+    color: white;
+}
+
+.radio-group{
+    display: block;
+    width: 80%;
+    padding-left: 30px;;
+}
+
+.radio-group label{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.radio-group label:last-child{
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.radio-group input[type="radio"] {
+    appearance: none;
+   -webkit-appearance: none;
+ background-color: green;
+   color: green;
+   width: 15px;
+   height: 15px;
+   border-radius: 10px;
+   background-color:  transparent;
+   border : 1px solid grey;
+   padding : 5px;
+   display: inline;
+}
+
+.radio-group input[type="radio"]:checked {
+    /* padding: -5px; */
+    background-color: green;
+    /* border: 2px solid red; */
+    /* border-spacing: 5px; */
+    box-shadow: inset 0 0 0 2px white;
+    /* -webkit-appearance: none; */
+    /* border: 2px solid green; */
+    /* width: 25px;
+    height: 17px; */
+    /* border-radius: 50%; */
+    /* background-color: green; */
+    /* color: green; */
+    /* color: green; */
+ }
+
+button{
+    width : 94%;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0px;
+    height: 30px;
+}
+form{
+    width: 94%;
+}
