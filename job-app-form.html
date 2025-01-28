@@ -8,39 +8,35 @@
 </head>
 <body>
     <div class="container">
-        <h1>Job Application Form For Farts Sniffing</h1>
+        <h1>Job Application Form Dev Position</h1>
         <form>
             <label>
                 Full Name:
-                <input type="text" id="name">
+                <input type="text" id="name" placeholder="Enter your full name">
             </label>
 
             <label>
                 Email:
-                <input type="email" id="email">
+                <input type="email" id="email" placeholder="example@gmail.com">
             </label>
             <label for="position">Position:</label>
             <select id="position">
-                <option>Fart smella</option>
-                <option>Smart Fella</option>
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option diabled selected>Select an option</option>
             </select>
             <fieldset class="radio-group">
-                <legend>Speciality:</legend>
+                <legend>Availability</legend>
                 
                 <input type="radio" name="availability">
-                <label>Seats smella</label>
+                <label>Part time</label>
                 
                 <input type="radio" name="availability">
-                <label>Socks smella</label>
-                
-                <input type="radio" name="availability">
-                <label>Fart smella</label>
+                <label>Full time</label>
             </fieldset>
-            <label>Chi Hadra Zayda?</label>
-            <br>
-            <textarea rows="5" cols="15" id="message"></textarea>
-            <br>
-            <button type="submit">Submit</button>
+            <label id="textar">Tell us about yourself:</label>
+            <textarea placeholder="Enter your text here" rows="5" cols="15" id="message"></textarea>
+            <button type="submit">Submit Application</button>
         </form>
     </div>
 </body>

@@ -1,31 +1,37 @@
 .container{
     width: 600px;
-    height: 700px;
-    display: block;
+    /* height: 700px; */
+    /* display: block; */
     margin-left: 25px;
     padding-left: 3%;
     padding-right: 3%;
-    padding-top: 30px;
-    /* padding-right: 20px; */
-    /* background-color: beige; */
+    padding-bottom: 30px;;
+    padding-top: 30px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* line-height: 20px; */
     margin-bottom: 30px;
 }
+
+h1{
+    text-align: center;
+    padding-right: 15px;
+}
 select{
-    width: 100%;
-    height: 30px;
+    width: 95%;
+    height: 35px;
     margin: 10px 0px;
 }
-
-fieldset{
-    margin-top: 15px;
+textarea{
+    width: 94%;
+}
+#textar{
+    margin-top: 16px;
+    margin-bottom: 15px;
 }
 
 input:focus, textarea:focus, select:focus{
     outline-color: black;
 }
-
+ 
 input:invalid, textarea:invalid, select:invalid{
     outline-color: red;
 }
@@ -48,11 +54,14 @@ button:hover{
     background-color: midnightblue;
     color: white;
 }
-
+#email, #name{
+    height: 25px;
+}
 .radio-group{
-    display: block;
-    width: 80%;
-    padding-left: 30px;;
+    display: inline;
+    width: 90%;
+    /* padding-left: 20px;
+    padding-right: 120px;; */
 }
 
 .radio-group label{
@@ -68,8 +77,9 @@ button:hover{
 .radio-group input[type="radio"] {
     appearance: none;
    -webkit-appearance: none;
- background-color: green;
-   color: green;
+    background-color: green;
+    margin-bottom: 0px;
+    color: green;
    width: 15px;
    height: 15px;
    border-radius: 10px;
@@ -96,14 +106,15 @@ button:hover{
  }
 
 button{
-    width : 94%;
+    width : 95%;
     background-color: green;
     color: white;
     font-size: 15px;
     border-radius: 10px;
     border: 0px;
     height: 30px;
+    margin-top: 15px;
 }
 form{
-    width: 94%;
+    width: 100%;
 }
