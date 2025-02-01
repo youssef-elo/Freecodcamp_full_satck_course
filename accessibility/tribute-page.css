@@ -1,0 +1,70 @@
+#main{
+    width: 750px;
+    font-family: "Noto Serif Todhri", cursive;
+    background-color: #d3d3d3;
+    color: #1a1c1a;
+    text-align: center;
+    padding-top: 30px;
+    margin: 30px auto;
+    padding-bottom: 20px;
+}
+
+.img-div{
+    background-color: white;
+    /* display: flex; */
+    /* justify-content: center;
+    flex-wrap: wrap; */
+    width: 705px;
+    padding: 0;
+    padding-bottom: 7px;
+    /* padding : 10%; */
+    /* padding-top: 25px; */
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.img-div img{
+    object-fit: cover;
+    width: 700px;
+    margin: 0;
+}
+
+
+.life{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.year{
+    font-weight: 1000;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+blockquote{
+    font-weight: 500;
+    margin: 20px auto;
+    padding-top: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+.no-bottom{
+    margin-bottom: 0;
+    /* font-weight: medium; */
+}
+
+a{
+    text-decoration: none;
+    color: brown;
+    /* font-weight: bold; */
+}
+a:hover{
+    /* color: white; */
+    font-weight:bold;
+}

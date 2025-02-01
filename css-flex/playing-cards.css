@@ -1,0 +1,63 @@
+body{
+    background-color:lightpink;
+}
+.playing-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap:20px;
+}
+.card{
+    width: 250px;
+    height: 350px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    background-color: white;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 33px;
+    font-weight:bold;
+    font-family: roboto slab;
+    text-align: center;
+    border: 1px solid black;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.first{
+    align-self: flex-start;
+}
+
+.second{
+    align-self: center;
+    font-size: 100px;
+    margin:0; 
+    padding: 0;
+}
+
+.third{
+    align-self: flex-end;
+    justify-content: center;
+}
+
+.first, .third{
+    line-height: 35px;
+} 
+
+
+.flipped{
+    transform: rotate(180deg);
+}
+.red-card{
+    color: red;
+}
+.smaller-text{
+    font-size: 80px;
+}
