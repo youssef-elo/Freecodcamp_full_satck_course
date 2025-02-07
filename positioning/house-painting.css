@@ -1,0 +1,123 @@
+body{
+    background-image: url("https://img.freepik.com/free-vector/realistic-spring-landscape-with-blurry-elements_23-2148859166.jpg?t=st=1738493455~exp=1738497055~hmac=b0daf47a31df9f1cceb7d0fecc0e50f29f6ccd248afe77806f2ffea61354e3ba&w=1800");
+}
+/* House */
+.house{
+    background-color: #113B3A;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top:22%;
+    left: 20%;
+}
+
+
+/* Door */
+.door{
+    width:30%;
+    height: 45%;
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    translate: -50% -100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-right: 1px solid #FFFDD0;
+}
+
+.doorknob{
+    width: 20px;
+    height: 20px;
+    background-color: #5CA6B3;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 100%;
+    translate: -150%;
+}
+
+.door-hinge1, .door-hinge2{
+    height: 20px;
+    width: 3px;
+    background-color: #5CA6B3;
+}
+
+
+.door-hinge2{
+    position: relative;
+    top: 65%;
+    left: -2px;
+}
+.door-hinge1{
+    position: relative;
+    top: 17%;
+    left: -2px;
+}
+
+
+/* Windows */
+
+.window{
+    width: 25%;
+    height: 20%;
+    background-color: #5CA6B3;
+    border-radius: 10px;
+}
+
+.window::before{
+    content:"";
+    width:2px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    /* z-index: 30; */
+    left: 50%;
+}
+
+.window::after{
+    content:"";
+    width:2px;
+    height: 125%;
+    background-color: white;
+    position: absolute;
+    /* z-index: 30; */
+    /* top: 50%; */
+    transform: rotate(90deg);
+    /* translate: -50%; */
+    left: 50%;
+    translate: 0 -10%;
+}
+
+.window-1{
+    position: absolute;
+    top: 22%;
+    left:7%;
+}
+.window-2{
+    position: absolute;
+    top: 22%;
+    left:93%;
+    translate: -100%;
+}
+
+/* CHimney */
+
+.chimney{
+    width:  15%;
+    height: 25%;
+    background-color: #113B3A;
+    position: absolute;
+    top: -201px;
+    border-bottom: 4px solid black;
+    left: 75%;
+    z-index: -1;
+}
+
+.chimney-head{
+    width: 115%;
+    height: 20%;
+    background-color: #166166;
+    position: relative;
+    left: -7%;
+}
