@@ -1,0 +1,128 @@
+:root{
+    
+    --color0: white;
+    --color1: hsl(120, 100%, 50%);
+    --color2: hsl(120, 100%, 40%);
+    --color3: hsl(120, 100%, 35%);
+    --color4: hsl(120, 100%, 30%);
+    --color5: hsl(120, 100%, 20%);
+}
+
+body{
+    background-color: hsl(150, 30%, 75%);;
+    /* padding: 200px; */
+    box-sizing: border-box;
+    padding: 1px;
+
+}
+
+th, td{
+    width: 100px;
+    height: 20px;
+    padding: 1px;
+}
+
+
+table{
+    width: auto;
+    margin: 200px auto;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+}
+
+.solid-top td, .solid-bottom td{
+    border-top: 2px solid black;
+}
+
+.available-5{
+    background-color: var(--color5);
+}
+
+.available-4{
+    background-color: var(--color4);
+}
+
+.available-3{
+    background-color: var(--color3);
+}
+
+.available-2{
+    background-color: var(--color2);
+}
+
+.available-1{
+    background-color: var(--color1);
+}
+.available-0{
+    background-color: var(--color0);
+}
+
+
+.dashed{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    /* border-top: 2px solid black; */
+    border-bottom: 2px dashed black;
+}
+
+.solid{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+    border-bottom: 2px solid black;
+}
+
+
+#legend{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 70px; */
+    margin: 0 auto;
+    padding: 1px;
+    margin-right: -90px;
+}
+#legend span{
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#legend-gradient{
+    width: 120px;
+    height: 20px;
+    background: linear-gradient(
+        to right,
+        var(--color0, red) 0%,
+        var(--color0, red) 16%,
+        var(--color1, red) 16.5%,
+        var(--color1, red) 33%,
+        var(--color2, red) 33%,
+        var(--color2, red) 49.5%,
+        var(--color3, red) 49.5%,
+        var(--color3, red) 66%,
+        var(--color4, red) 66%,
+        var(--color4, red) 82.5%,
+        var(--color5, red) 82.5%,
+        var(--color5, red) 99%,
+        transparent 99%,
+        transparent 100%
+        );
+}
+
+#legend-gradient::before{
+    content: "0";
+    position: relative;
+    left: -20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#legend-gradient::after{
+    content: "5+";
+    position: relative;
+    font-weight: bold;
+    left: 120px;
+    font-size: 18px;
+}
