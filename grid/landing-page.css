@@ -1,0 +1,147 @@
+:root{
+    --green: #1ed860;
+    --black: #121212;
+}
+
+html{
+    /* font-size: 16px; */
+    font-family: "Signika";
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-color: var(--black);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Nav Bar */
+
+.header-img{
+    width: 6rem;
+}
+
+.nav-bar{
+    align-content: center;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 6vh;
+    margin-top: -8px;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 0.4rem;
+}
+
+.links-container{
+    width: 55%;
+/* changes with screen size */
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.nav-links{
+    /* align-self: center; */
+    font-size: 2.5em;
+    color: var(--green);
+    text-decoration: none;
+    align-self: center;
+}
+
+/* Hero */
+.hero-container{
+    height: 462px;
+    padding: 60% 0 0 0;
+    margin: 0;
+    width: 100%;
+    background-image: url("https://wwwmarketing.scdn.co/static/images/premium/mobile-album-evergreen-2x.png"), linear-gradient(0deg, rgba(255, 210, 215, 0) 45%, #FFD2D7 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.hero h1, .hero h2{
+    line-height: 32.7px;
+    font-weight: bold;
+    letter-spacing: -0.015em;
+    text-shadow: rgba(0, 0, 0, 0.65) 0 4px 14px;
+}
+
+.hero h1{
+    font-size: 2.1rem;
+    margin : 0;
+}
+.hero h2{
+    margin : 10px 0 13px;
+    font-size: 1.1rem;
+    font-weight:340;
+}
+
+.hero{
+    padding : 1px 16px 32px 16px;
+}
+
+.offer{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 7px;
+    padding-left: 5px;
+    border-radius: 2px;
+}
+.offer p{
+    /* margin-top: 20px; */
+    padding-top:2px;
+    margin: 0;
+}
+.bell{
+    fill: #0064c1;
+}
+
+.call-to-action{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 35px 0 28px 0;
+    padding: 1px;
+}
+
+.hero-button{
+    all: unset;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 9999px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(127, 127, 127);
+}
+
+.get-started{
+    color: black;
+    background-color: #FFD2D7;
+    border: none;
+}
+
+.hero-description{
+    font-weight:10;
+    font-size: 12px;
+}
+.hero-description a{
+    all : unset;
+    text-decoration: underline;
+}
