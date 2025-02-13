@@ -1,0 +1,65 @@
+body{
+    background-color: #fdfff5;
+    box-sizing:border-box;
+    font-family: Arial;
+}
+
+p{
+    font-family: Arial;
+    text-indent: 6px;
+}
+
+.magazine-cover{
+    width: 650px;
+    display: grid;
+    grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "small-article1 small-article2 cover-image";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 10px;
+    margin: 25% auto;
+}
+
+.magazine-cover section
+{
+    padding: 10px;
+    border-radius: 6px;;
+}
+
+.title{
+    grid-area:title;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 23px;
+    background-color: #1B1B32;
+    color: white;
+}
+
+.feature-article{
+    grid-area: feature-article;
+    background-color: white;
+}
+
+.small-article1{
+    grid-area: small-article1;
+}
+
+.small-article2{
+    grid-area: small-article2;
+}
+
+.cover-image{
+    grid-area: cover-image;
+    align-content: center;
+    gap: 0;
+    padding: 20px 10px;
+}
+.cover-image img{
+    width: 100%;
+}
+
+.cover-image, .small-article1, .small-article2{
+    background-color: lightgrey;
+}
