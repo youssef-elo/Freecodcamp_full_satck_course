@@ -18,6 +18,17 @@ body{
     margin: 0;
 }
 
+/* premade */
+.bold-font{
+    font-weight: bold;
+}
+.medium-font{
+    font-weight: 400;
+}
+.text-center{
+    text-align: center;
+}
+
 /* Nav Bar */
 
 .header-img{
@@ -34,22 +45,24 @@ body{
     justify-content: space-around;
     font-weight: 600;
     font-size: 0.4rem;
+    padding: 1px;
 }
 
 .links-container{
+    padding: 1px;
     width: 55%;
-/* changes with screen size */
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
 }
 
 .nav-links{
-    /* align-self: center; */
     font-size: 2.5em;
     color: var(--green);
     text-decoration: none;
-    align-self: center;
+    padding-top: 5px;
 }
 
 /* Hero */
@@ -58,6 +71,7 @@ body{
     padding: 60% 0 0 0;
     margin: 0;
     width: 100%;
+    height: fit-content;
     background-image: url("https://wwwmarketing.scdn.co/static/images/premium/mobile-album-evergreen-2x.png"), linear-gradient(0deg, rgba(255, 210, 215, 0) 45%, #FFD2D7 100%);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -144,4 +158,123 @@ body{
 .hero-description a{
     all : unset;
     text-decoration: underline;
+}
+
+/* difference table */
+
+
+.difference-container{
+    padding: 35px 0 35px 0;
+}
+
+.difference-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 25px 25px 25px;
+}
+
+.difference-header h3, .difference-header h2{
+    margin-top: 0;
+    margin-bottom:0;
+}
+.difference-header h2{
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.diff-icon{
+    fill: white;
+    width: 24px;
+    height: 24px;
+    vector-effect: non-scaling-stroke;
+
+}
+
+
+
+table{
+    border-collapse: collapse;
+}
+
+thead{
+    border-bottom: 1px solid grey;
+    text-align: left;
+}
+
+.diff-th1{
+    vertical-align: bottom;
+    /* display: block; */
+    
+}
+.thead2{
+    width: 29%;
+    font-size:16px;
+}
+.diff-th2{
+    width: 70%;
+}
+
+.diff-th3{
+    justify-self: center;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap:; */
+    width: 85%;
+    gap: 2px;
+}
+
+.thead3{
+    padding: 32px 8px 32px 20px;
+    box-sizing: border-box;
+    width: 29%;
+    /* background-color: red; */
+    
+}
+
+
+
+.diff-th3 div{
+    width: fit-content;
+}
+
+th, td{
+    padding: 16px 10px;
+    border-bottom: 1px solid grey;
+    text-align : left;
+}
+
+.line{
+    background-color: grey;
+    width: 23px;
+    height: 3px;
+}
+.line-parent{
+    /* display: flex; */
+    align-items : center;
+    justify-content: center;
+    box-sizing: border-box;
+    /* padding: 20px; */
+    height: 100%;
+}
+
+
+
+/* CHECK MARK */
+
+.check-mark path{
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+.check-mark{
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+.check-parent{
+    vertical-align: middle;
 }
