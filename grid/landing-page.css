@@ -2,7 +2,9 @@
     --green: #1ed860;
     --black: #121212;
 }
-
+*{
+    box-sizing: border-box;
+}
 html{
     /* font-size: 16px; */
     font-family: "Signika";
@@ -320,3 +322,113 @@ tr td, tr th{
     text-align: center;
 }
 
+
+
+/* Premium plans description */
+
+
+.premium-plans{
+    box-sizing: border-box;
+    padding: 35px 24px 0;
+}
+.premium-plans h2{
+    letter-spacing: -1px;
+    font-size: 32px;;
+    margin: 0;
+}
+.premium-plans h3{
+    font-weight: 300;
+    text-align: center;
+    font-size: 17px;
+    margin: 16px 0 32px;
+}
+
+
+.payement{
+    display : flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.payement-parent{
+    background-color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.payement-method{
+    width: 45px;
+    height: 30px;
+    /* border:1px solid lightgrey; */
+}
+
+.visa{
+    background-image: url("../assets/visa.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.american-express{
+    background-image: url("../assets/amex.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.master-card{
+    background-image: url("../assets/mastercard.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.paypal{
+    background-image: url("../assets/paypal.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.discover{
+    background-image: url("../assets/discover.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Respoonsive */
+
+.list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 48px 0;
+    padding: 0 32px;
+}
+.list-container h3{
+    text-align: center;
+    font-size: 26px;
+    display: block;
+    margin: 0;
+    font-weight: 700;
+}
+
+
+.premium-list{
+    list-style:"✓";
+}
+
+/* .premium-list li::before{
+    content: "✓";
+    position: relative;
+    left:px;
+} */
+.premium-list li{
+    margin:  0 0 0 20px;
+    padding-left: 10px;
+}
