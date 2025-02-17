@@ -1,6 +1,11 @@
 :root{
     --green: #1ed860;
     --black: #121212;
+    --pink: rgb(255, 210, 215);
+    --purple: rgb(196, 177, 212);
+    --mustard: rgb(255, 200, 98);
+    --light-blue: rgb(165, 187, 209);
+    --green-blue: rgb(201, 227, 219);
 }
 *{
     box-sizing: border-box;
@@ -11,6 +16,29 @@ html{
     width: 100vw;
     height: 100vh;
 }
+
+
+.pink{
+    color: var(--pink);
+    --background-color: var(--pink);
+}
+.purple{
+    color: var(--purple);
+    --background-color: var(--purple);
+}
+.mustard{
+    color: var(--mustard);
+    --background-color: var(--mustard);
+}
+.lightblue{
+    color: var(--light-blue);
+    --background-color: var(--light-blue);
+}
+.greenblue{
+    color: var(--green-blue);
+    --background-color: var(--green-blue);
+}
+
 
 body{
     background-color: var(--black);
@@ -158,6 +186,9 @@ body{
     border-width: 1px;
     border-style: solid;
     border-color: rgb(127, 127, 127);
+    /* RESPONSIVE to apply only with larger screens  */
+    /* max-width: 150px; */
+    min-block-size: 48px;
 }
 
 .get-started{
@@ -441,33 +472,181 @@ tr td, tr th{
     box-sizing: border-box;
     padding: 0 24px;
     max-width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
 .card{
+    display: block;
     background-color: red;
     width: 100%;
-    height: 320px;
     border-radius: 15px;
     background-color: rgb(36, 36 , 36);
     /* TEMP */
     padding: 1px;
     margin-top: 20px;
     /* TEMP */
+    box-sizing: border-box;
     max-width: 400px;
 }
 
 .price-container{
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 10px;
 }
 
 .first-price{
-    background-color: rgb(255, 210, 215);
+    background-color: var(--background-color);
     color: black;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 600;
     padding: 8px 16px;
     line-height: 13.75px;
     border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
+
+
+/* .plan{
+    pading: 
+} */
+
+.plan{
+    padding:  0 16px; 
+}
+
+.price-hr{
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.1);
+    margin: 16px 0 0;
+    border: none;
+}
+
+.spotify-logo-plans{
+    margin-top: 16px;
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+.spotify-logo-plans span{
+    padding-top: 3px;
+}
+
+.plan-name{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 145%;
+    margin: 0;
+}
+
+
+.current-price{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 4px 0 0;
+}
+
+.after-price{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    color: rgb(167, 167, 167);
+    
+}
+
+.plan-description{
+    padding: 20px 16px;
+    padding-right: 0;
+    margin: 0;
+    font-size: 16.5px;
+    font-weight: 350;
+    line-height: 22px;
+}
+.plan-description li::marker{
+    font-size: 13px;
+}
+
+.card-button{
+    all: unset;
+    color: black;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 30px;
+    min-block-size: 48px;
+    border-radius: 9999px;
+    font-size: 17px;
+    font-weight: 610;
+    margin-bottom: 16px;
+}
+
+.plan-description2{
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 200;
+    text-align: center;
+    color: rgb(167, 167, 167);
+    padding: 4px 0 16px 0;
+    margin-bottom: 0;
+}
+
+.plan-terms{
+    all: unset;
+    text-decoration: underline;
+}
+
+.audio-books{
+    text-align: center;
+    padding: 35px 0;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 400px;
+}
+
+.audio-books .plan-name{
+    font-size: 33px;
+    letter-spacing: +0.3px;
+    line-height: 100%;
+}
+
+.audio-books .current-price{
+    font-size: 17px;
+    margin: 0;
+    padding: 8px 0;
+}
+
+
+.audiobooks-description{
+    font-size: 14.2px;
+    padding: 8px 0;
+    margin: 0;
+    font-weight: 100;
+}
+
+.audiobooks-button {
+    margin: 1px auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: black;
+    border-radius: 9999px;
+    min-block-size: 48px;
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 17px;
+    font-weight: 610;
+    margin: 8px 0;
+}
+
