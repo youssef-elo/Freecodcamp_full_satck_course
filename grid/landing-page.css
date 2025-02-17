@@ -634,7 +634,7 @@ tr td, tr th{
     font-weight: 100;
 }
 
-.audiobooks-button {
+.audiobooks-button{
     margin: 1px auto;
     display: inline-flex;
     align-items: center;
@@ -650,3 +650,106 @@ tr td, tr th{
     margin: 8px 0;
 }
 
+/* faq section */
+.faq{
+    padding: 35px 0 64px;
+    max-width: 100%;
+    color: white;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.faq li summary{
+    padding: 16px;
+    margin: 0;
+}
+
+.faq-list{
+    /* all: unset; */
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.faq h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.faq p{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.faq a{
+    all: unset;
+    color: white;
+    text-decoration: underline;
+}
+
+.answer-container{
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 15px 32px 32px 32px;
+}
+
+
+summary::-webkit-details-marker {
+    order: -1;
+    /* display: none; */
+}
+summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-size: ; */
+    /* list-style: none; */
+}
+summary div{
+    font-size: 1.15em;
+    font-weight: 600;
+}
+
+.faq-hr{
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+    border: none;
+}
+.faq li summary div{
+    width: 92%;
+}
+
+#faq-arrow{
+    display: block;
+    width: 32px;
+    height: 35px;
+    box-sizing: content-box;
+}
+.answer-container{
+    font-size: 17px;
+    font-weight: 370;
+    width: 100%;
+}
+.answer-container p{
+    width: 100%;
+    margin-top: 0;
+}
+.answer-container p:last-of-type{
+    width: 100%;
+    margin: 0;
+}
+
+details{
+    max-width: 100%;
+}
+
+
+details[open] .faq-arrow{
+    transform: rotate(180deg);
+}
+details[open] summary{
+    text-decoration: underline;
+    background-color: #2a2a2a;
+}
